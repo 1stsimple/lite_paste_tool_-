@@ -1,0 +1,11 @@
+add_executable(test_clipboard_repository test_clipboard_repository.cpp)
+target_link_libraries(test_clipboard_repository PRIVATE litepaste_core Qt5::Test)
+add_test(NAME test_clipboard_repository COMMAND test_clipboard_repository)
+
+add_executable(test_text_normalizer test_text_normalizer.cpp)
+target_link_libraries(test_text_normalizer PRIVATE litepaste_core Qt5::Test)
+add_test(NAME test_text_normalizer COMMAND test_text_normalizer)
+
+add_executable(test_encoding_probe test_encoding_probe.cpp)
+target_link_libraries(test_encoding_probe PRIVATE litepaste_core Qt5::Test)
+add_test(NAME test_encoding_probe COMMAND test_encoding_probe)

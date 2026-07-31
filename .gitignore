@@ -14,3 +14,4 @@ Makefile
 *.ilk
 .vs/
 .vscode/
+settings.local.json
